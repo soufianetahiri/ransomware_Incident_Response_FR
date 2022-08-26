@@ -5,7 +5,7 @@ Une checklist (simple) est mise à dispo par  [rapid7](https://ss-usa.s3.amazona
 
 # Détecter l'attaque
 
-L'étape de détection est celle où vous découvrez la présence du ransomware ou le la présence d'une compagne de ciblage en cours. Que la notification provienne d'un système/du SOC, d'un employé ou d'un message apparu sur votre écran vous demandant de payer pour décrypter vos fichiers, les premières mesures que l'organisation devrait prendre consistent à identifier le principal responsable du traitement de l'incident (l'équipe sécurité ?) et à documenter autant d'informations que possible sur l'incident.
+L'étape de détection est celle où vous découvrez la présence du ransomware ou celle d'une compagne de ciblage en cours. Que la notification provienne d'un système/du SOC, d'un employé ou d'un message apparu sur votre écran vous demandant de payer pour décrypter vos fichiers, les premières mesures que l'organisation devrait prendre consistent à identifier le principal responsable du traitement de l'incident (l'équipe sécurité ?) et à documenter autant d'informations que possible sur l'incident.
 
 Globalement la détection se fait suite à:
 
@@ -20,6 +20,7 @@ Globalement la détection se fait suite à:
 # Communiquer
 Établissez à l'avance un protocole pour les communications "out-of-band"
 ![image2021-12-7_16-0-37.png](https://i.ibb.co/BstGNgM/image2021-12-7-16-0-37.png2)
+(source : https://www.ssi.gouv.fr/guide/crise-dorigine-cyber-les-cles-dune-gestion-operationnelle-et-strategique/) 
 # Analyser la menace
 
 La phase d'analyse consiste à faire tout ce qui est en votre pouvoir pour identifier la portée, les origines et les modèles d'occurrence du ransomware. En d'autres termes, quelle est sa gravité, d'où vient-il et à quelle vitesse se propage-t-il ? Déterminez quels fichiers ont été cryptés et s'il existe une clé de décryptage connue.
