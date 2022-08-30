@@ -55,12 +55,12 @@ La phase d'analyse consiste à faire tout ce qui est en votre pouvoir pour ident
 ## Détermination du scope de l'incident
 
 1.  Quels sont les systèmes concernés ?
-    1.  Rechercher des indicateurs concrets de compromission (IOCs) tels que des fichiers/hashs, des processus, des connexions réseau, etc. Utiliser S1 par exemple voici quelques requêtes utiles: [https://github.com/soufianetahiri/sentinelone-queries/tree/main/queries/windows](https://github.com/soufianetahiri/sentinelone-queries/tree/main/queries/windows)) , endpoint telemetry, les journaux système, etc.
+    1.  Rechercher des indicateurs concrets de compromission (IOCs) tels que des fichiers/hashs, des processus, des connexions réseau, etc. Si vous utilisez sentinelone (par exemple) voici quelques requêtes utiles: [https://github.com/soufianetahiri/sentinelone-queries/tree/main/queries/windows](https://github.com/soufianetahiri/sentinelone-queries/tree/main/queries/windows)) , endpoint telemetry, les journaux système, etc.
     2.  Vérifier la similitude (utilisateurs, groupes, données, outils, configuration, état des correctifs similaires) : vérifier les IAM, les outils de gestion des permissions, les services d'annuaire, etc.
     3.  Trouver le système de commande et de contrôle (C2) externe, s'il est présent, et trouver les autres systèmes qui s'y connectent : vérifier les journaux du pare-feu ou de l'IDS, les journaux du système/EDR, les journaux DNS, les journaux du flux net ou du routeur, etc.
     4.  Quelles sont les données affectées ? (par exemple, les types de fichiers ou le groupe, le logiciel affecté).
     5.  Trouver des changements anormaux dans les métadonnées des fichiers, comme des changements massifs dans les heures de création ou de modification. Vérifier les outils de recherche de métadonnées de fichiers
-    6.  Trouver des changements dans des fichiers de données normalement stables ou critiques. Vérifier les outils de surveillance de l'intégrité des fichiers (Varonis?)
+    6.  Trouver des changements dans des fichiers de données normalement stables ou critiques. Vérifier les outils de surveillance de l'intégrité des fichiers (des outils comme Varonis permettent de le faire )
 
 Il est important de déterminer le moyen de propagation utilisé par l'acteur, il existe globalement 3 moyens de propagations (ces exemples sont tirés du mode opératoire du groupe MazeRansomware):
 
